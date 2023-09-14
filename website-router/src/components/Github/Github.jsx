@@ -7,9 +7,9 @@ const Github = () => {
     //     fetch("https://api.github.com/users/aka-invincible").
     //     then((response) => response.json()).
     //     then((data) => setData(data))
-    // } , [])
+    // } , [])// this
 
-    const data = useLoaderData();
+    const data = useLoaderData(); // or this
   return (
     <div className='bg-gray-600 text-center text-white text-3xl p-4'>
       Github Followers: {data?.followers}
@@ -20,7 +20,7 @@ const Github = () => {
 
 export default Github
 
-export const githubInfoLoader = async () => {
+export const githubInfoLoader = async () => { // or this
     const response = await fetch("https://api.github.com/users/aka-invincible");
     return response.json();
 }
