@@ -8,6 +8,12 @@ function App() {
     if(count < 20){
       count = count+1;
       setCount(count);
+      /* setCount(count+1)
+      When you call the setCount function returned by the useState hook in React,
+      it doesn't immediately change the value of count.
+      Instead, it schedules an update to the count state.
+      React manages these updates in a way that optimizes performance.
+      */
       console.log(count, ' add');// print value before of count before curr call od setCount() even if out of if
     }
   }

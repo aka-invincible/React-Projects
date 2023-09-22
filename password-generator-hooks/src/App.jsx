@@ -27,8 +27,11 @@ function App() {
 
     setPassword(pass);
   }, [length, numberAllowed, charAllowed])
-  // password keep on changing continuously in for loop so if password is put in dependency array
-  // it will keep on changing as a change in password will trigger passwordGenerator again.
+  // passwordGenerator will be called when password will change [useCallback not in useEffect]
+  // password will change when passWordGenerator will be called.
+  // So it creates circular dependency which causes password to continuously change in input box without doing anything.
+  // to avoid this, password should not be in dependency array of useCallback of passwordGenerator.
+
 
   const copyToClipboard = useCallback(() => {
     passwordRef.current?.select();
