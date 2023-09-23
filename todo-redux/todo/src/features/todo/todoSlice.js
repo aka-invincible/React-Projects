@@ -8,6 +8,11 @@ const initialState = {
 
 export const todoSlice = createSlice({
     name: 'todo',
+    /*
+    This name is used internally by Redux Toolkit to generate action types and to organize the reducer
+    functions. It's also used when you want to access the slice or its actions from other parts of
+    your application. It also helps to identify a slice.
+    */
     initialState,
     reducers: {
         addTodos: (state, action) => {
