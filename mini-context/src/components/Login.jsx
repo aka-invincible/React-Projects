@@ -12,9 +12,11 @@ const Login = () => {
     }
   return (
     <div className='mx-auto'>
-      <h1>Login</h1>
+      <h2>Login</h2>
       <input type='text' placeholder='username' value={username} onChange={(e) => setUsername(e.target.value)}/>
+      {" "}
       <input type='text' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+      {" "}
       <button onClick={handleSubmit}>Submit</button>
     </div>
   )

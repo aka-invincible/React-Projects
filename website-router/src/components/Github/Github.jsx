@@ -9,7 +9,7 @@ const Github = () => {
     //     then((data) => setData(data))
     // } , [])// this
 
-    const data = useLoaderData(); // or this
+    const data = useLoaderData(); // or this // cursor rakhte hi load hone lagega.
   return (
     <div className='bg-gray-600 text-center text-white text-3xl p-4'>
       Github Followers: {data?.followers}

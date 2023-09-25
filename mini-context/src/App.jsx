@@ -7,9 +7,9 @@ function App() {
 
   return (
     <UserContextProvider>
-      <h1>Akash Agarwal</h1>
-      <Login/>
-      <Profile/>
+        <h1>Context API project</h1>
+        <Login/>
+        <Profile/>
     </UserContextProvider>
   )
 }
